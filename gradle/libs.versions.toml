@@ -1,0 +1,36 @@
+[versions]
+androidGradlePlugin = "7.4.0-beta02"
+androidxCore = "1.7.0"
+androidxCompat = "1.6.1"
+
+androidMaterial = "1.9.0"
+
+androidxConstraint = "2.1.4"
+
+jetBrainsKotlin = "1.7.10"
+
+junit = "4.13.2"
+
+androidxJunit = "1.1.5"
+
+
+androidxTestEspresso = "3.5.1"
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "jetBrainsKotlin" }
+
+
+[libraries]
+androidx-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxCompat" }
+google-android-material = { module = "com.google.android.material:material", version.ref = "androidMaterial" }
+androidx-constraint-layout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "androidxConstraint" }
+
+
+junit = { module = "junit:junit" , version.ref = "junit"}
+androidx-junit = { module = "androidx.test.ext:junit" , version.ref = "androidxJunit"}
+
+androidx-test-expresso = { module = "androidx.test.espresso:espresso-core" , version.ref = "androidxTestEspresso"}
